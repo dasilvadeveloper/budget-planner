@@ -1,0 +1,150 @@
+.align-end {
+  text-align: end;
+}
+
+.mat-mdc-table {
+  background-color: transparent !important;
+  margin-top: 1.5rem;
+
+  td {
+    border-bottom: none;
+    text-align: center;
+  }
+
+  td.text-end {
+    width: 100px;
+    text-align: end !important;
+  }
+
+  td.text-center {
+    text-align: center !important;
+  }
+
+  tr {
+    height: 3rem;
+  }
+
+  th {
+    text-align: center;
+    border: none;
+    font-weight: 400;
+    background: #f9f9f9;
+    color: rgb(136, 136, 136);
+  }
+
+  th:nth-child(1) {
+    border-radius: 1rem 0 0 1rem;
+  }
+  th:last-child {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  th.text-end {
+    text-align: end !important;
+  }
+
+  th.text-center {
+    text-align: center !important;
+  }
+  td.text-start {
+    text-align: start;
+  }
+  th.text-start {
+    text-align: start;
+  }
+}
+
+.mat-row:hover .mat-cell {
+  background: #1a1f2e;
+}
+.mat-row:hover .mat-cell {
+  background: #1a1f2e;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 0.75rem; /* horizontal | vertical */
+}
+
+.mat-header-cell {
+  background: #1a1f2e;
+  color: white;
+}
+td:nth-child(1) {
+  color: var(--accent);
+  border-radius: 1rem 0 0 1rem;
+}
+td:last-child {
+  color: var(--accent);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+:host ::ng-deep tr.mat-row:hover td {
+  background: #1a1f2e !important;
+}
+th {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.mat-row:hover td {
+  background: #1a1f2e !important;
+}
+tr:hover td {
+  background: rgb(248, 248, 248) !important;
+}
+
+:host ::ng-deep .mdc-checkbox__background {
+  border-color: #d5d5d5 !important; /* mais clara */
+  border-width: 1.5px;
+}
+:host ::ng-deep .mdc-checkbox__background {
+  background-color: transparent !important;
+}
+
+:host ::ng-deep .mdc-checkbox__checkmark-path {
+  stroke: black !important;
+}
+
+.mat-mdc-unelevated-button {
+  background-color: var(--color-green-500) !important;
+}
+:host ::ng-deep .mat-mdc-unelevated-button .mdc-button__label {
+  color: white !important;
+}
+
+tr .primary-btn i {
+  display: none !important;
+}
+
+tr .primary-btn:hover i {
+  display: block !important;
+  color: var(--color-green-500);
+}
+
+tr:hover .primary-btn i {
+  display: block !important;
+}
+
+tr .edit-btn i {
+  display: none !important;
+}
+
+tr .edit-btn:hover i {
+  display: block !important;
+  color: var(--color-amber-400);
+}
+
+tr:hover .edit-btn i {
+  display: block !important;
+}
+
+tr .delete-btn i {
+  display: none !important;
+}
+tr:hover .delete-btn i {
+  display: block !important;
+}
+
+tr .delete-btn:hover i {
+  display: block !important;
+  color: var(--color-red-500);
+}

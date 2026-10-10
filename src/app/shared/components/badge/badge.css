@@ -1,0 +1,32 @@
+.pending {
+  background: var(--color-yellow-300);
+}
+
+.completed {
+  background: var(--color-green-400);
+}
+
+.failed {
+  background: var(--color-red-500);
+}
+
+.rascunho {
+  background: var(--color-gray-300);
+}
+
+.aceite {
+  background: var(--color-green-400);
+}
+
+.overdue {
+  background: var(--color-red-400);
+  color: var(--color-white);
+}
+
+.arquivado {
+  background: var(--color-gray-500);
+}
+
+.paid {
+  background: var(--color-green-400);
+}

@@ -1,0 +1,46 @@
+<div class="sidenav px-7 pt-6.5 shadow">
+  <div class="flex logo gap-2 items-center mb-20 justify-center">
+    <i
+      class="fa-solid fa-wallet bg-sky-900 p-1.5 text-center text-xl rounded-2xl w-10 h-10 accent pt-2.5"
+    ></i>
+    Budget <span class="font-semibold tracking-widest accent poppins">Planner</span>
+  </div>
+  <div class="sidenav-nav">
+    <li class="sidenav-nav-item">
+      <a class="sidenav-nav-link" routerLink="/dashboard" routerLinkActive="active">
+        <div class="sidenav-link-icon-container">
+          <i class="sidenav-link-icon fa-solid fa-arrow-up-right-dots"></i>
+        </div>
+
+        <span class="sidenav-link-text">Dashboard</span>
+      </a>
+    </li>
+    <li class="sidenav-nav-item">
+      <a class="sidenav-nav-link" routerLink="/expenses/expenses-list" routerLinkActive="active">
+        <div class="sidenav-link-icon-container">
+          <i class="sidenav-link-icon fa-solid fa-receipt"></i>
+        </div>
+
+        <span class="sidenav-link-text">Despesas</span>
+      </a>
+    </li>
+    <li class="sidenav-nav-item">
+      <a class="sidenav-nav-link" routerLink="/incomes/incomes-list" routerLinkActive="active">
+        <div class="sidenav-link-icon-container">
+          <i class="sidenav-link-icon fa-solid fa-sack-dollar"></i>
+        </div>
+
+        <span class="sidenav-link-text">Receitas</span>
+      </a>
+    </li>
+    <li class="sidenav-nav-item logout">
+      <a (click)="logout()" class="sidenav-nav-link">
+        <div class="sidenav-link-icon-container logout">
+          <i class="fa-solid fa-right-from-bracket logout"></i>
+        </div>
+
+        <span class="sidenav-link-text">Sair</span>
+      </a>
+    </li>
+  </div>
+</div>

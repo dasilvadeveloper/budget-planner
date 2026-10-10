@@ -1,0 +1,109 @@
+.input {
+  width: 350px;
+  display: flex;
+  padding: 0.3rem 1.3rem; 
+  border-radius: 1.5rem;
+  position: relative;
+}
+
+.input .icon-area {
+  position: absolute;
+  width: 50px;
+  right: 0.5rem;
+  margin: 0rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input .input-area {
+  padding: 0 0.7rem;
+  outline: 0;
+  border: 0;
+}
+
+.input .input-area {
+  position: relative;
+  width: 80%;
+}
+
+.input span {
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.4s;
+  color: rgb(165, 165, 165);
+}
+
+.input .input-area input {
+  padding: 1rem 0;
+  background: transparent;
+  outline: 0;
+  width: 100%;
+  border: 0;
+  color: var(--color-black);
+}
+
+.custom-input:focus {
+  transform: translateY(8px);
+}
+
+.custom-input:focus + .custom-placeholder {
+  color: rgb(158, 158, 158);
+  position: absolute;
+  font-size: 0.8rem;
+  top: 25%;
+}
+
+.input:has(.custom-input:focus) {
+  border: 0.5px dashed #f3f2a428;
+  background: var(--color-gray-100)
+  
+}
+
+.custom-input:not(:placeholder-shown) + .custom-placeholder {
+  color: rgb(108, 108, 108);
+  position: absolute;
+  font-size: 0.8rem;
+  top: 25%;
+}
+
+.custom-input:not(:placeholder-shown) {
+  transform: translateY(5px);
+}
+
+.input .icon-area i {
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.input .icon-area i:hover {
+  color: var(--accent);
+}
+
+button {
+  width: 130px;
+  transition: all 0.33s;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  outline: none;
+  background: rgba(0, 0, 0, 0.411);
+  backdrop-filter: blur(1em);
+  -webkit-backdrop-filter: blur(1em);
+}
+
+button:hover {
+  transform: scale(1.1);
+}

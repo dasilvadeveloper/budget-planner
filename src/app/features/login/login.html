@@ -1,0 +1,38 @@
+<div class="flex flex-col items-center h-screen justify-center">
+  <div class="bg-white p-10 rounded-xl pb-20 flex flex-col justify-center items-center w-full h-full md:h-min md:w-min md:shadow ">
+    <div class="flex logo items-center justify-center mb-5">
+      <div class="bg-sky-900 flex justify-center items-center text-xl rounded-2xl w-10 h-10 accent mr-2">
+        <i class="fa-solid fa-wallet"></i>
+      </div>
+      Budget <span class="ml-1 font-semibold accent poppins">Planner</span>
+    </div>
+    <h2 class="text-2xl font-medium text-(--accent)">Iniciar sessão</h2>
+    <form [formGroup]="form">
+      <div class="flex flex-col">
+        <div class="mt-5 pr-3">
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Nome de utilizador</mat-label>
+            <input matInput formControlName="username" appUsername />
+          </mat-form-field>
+        </div>
+
+        <div class="pr-3 mt-5">
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Palavra-passe</mat-label>
+            <input matInput formControlName="password" type="password" />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <button
+        mat-flat-button
+        color="primary"
+        class="w-40 mt-5 float-end"
+        (click)="login()"
+        [disabled]="isLoading()"
+      >
+        Entrar
+      </button>
+    </form>
+  </div>
+</div>
