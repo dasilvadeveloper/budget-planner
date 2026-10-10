@@ -2,7 +2,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { Component, inject, signal } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-import { MatError, MatFormField, MatInput, MatLabel } from '@angular/material/input';
+import { MatFormField, MatInput, MatLabel } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { AuthApi } from '../../core/auth/auth-api';
@@ -33,7 +33,6 @@ function loginErrorMessage(error: unknown): string {
     MatButtonModule,
     MatInput,
     MatLabel,
-    MatError,
     Username,
   ],
   templateUrl: './login.html',
@@ -44,8 +43,6 @@ export class Login {
   private auth = inject(AuthApi);
   private router = inject(Router);
   private _snackBar = inject(MatSnackBar);
-
-  readonly passwordMaxLength = PASSWORD_MAX_LENGTH;
 
   isLoading = signal(false);
   form = this.fb.nonNullable.group({
