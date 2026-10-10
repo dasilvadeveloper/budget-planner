@@ -1,0 +1,10 @@
+.git
+.github
+.angular
+.agents
+.claude
+.vscode
+node_modules
+dist
+*.md
+.env
